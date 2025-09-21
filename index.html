@@ -5,35 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manifest</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="wrapper">
-          <div class="header__logo">
+        <div class="header__body">
+          <a href="#" class="header__logo">
             <img src="./assets/images/Logo.png" alt="company logo" />
+          </a>
+          <div class="header__burger">
+            <span></span>
           </div>
-          <nav class="nav">
-            <ul class="nav__menu">
-              <li class="nav__item"><a href="" class="nav__link">Home</a></li>
-              <li class="nav__item"><a href="" class="nav__link">About</a></li>
-              <li class="nav__item"><a href="" class="nav__link">Works</a></li>
-              <li class="nav__item"><a href="" class="nav__link">Blog</a></li>
-              <li class="nav__item">
-                <a href="" class="nav__link">Contact</a>
-              </li>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li><a href="#" class="header__link">Home</a></li>
+              <li><a href="#" class="header__link">About</a></li>
+              <li><a href="#" class="header__link">Works</a></li>
+              <li><a href="#blog" class="header__link">Blog</a></li>
+              <li><a href="#" class="header__link">Contacts</a></li>
             </ul>
           </nav>
-          <img
-            src="./assets/images/search.png"
-            alt="search icon"
-            class="search_icon"
-          />
-          <img
-            src="./assets/images/hamburger.png"
-            alt="burger menu"
-            class="burger_menu"
-          />
+          <a href="#" class="header__search">
+            <img src="./assets/images/search.png" alt="search icon" />
+          </a>
         </div>
       </div>
     </header>
@@ -41,7 +36,7 @@
       <section class="section section_bg">
         <div class="container">
           <h1 class="title_1">
-            Mahhnifest is a newborn theme. <br />
+            Manifest is a newborn theme. <br />
             Clean, simple and fast.
           </h1>
         </div>
@@ -99,59 +94,61 @@
           <h3 class="section__title_3 text-left">Latest Posts</h3>
           <h5 class="section__subtitle d-inline">View All</h5>
           <button class="right-arrow">&rarr;</button>
-          <div class="block">
-            <div class="side">
-              <div class="image__container">
-                <img src="./assets/images/image_3.png" alt="picture" />
+          <div class="block__wrapper">
+            <div class="block">
+              <div class="side">
+                <div class="image__container">
+                  <img src="./assets/images/image_3.png" alt="picture" />
+                </div>
+              </div>
+              <div class="side">
+                <h5 class="section__subtitle space-between">
+                  Interface Design
+                  <span class="section__subtitle">8 June, 2020</span>
+                </h5>
+                <h4 class="section__title_4">UX traffic light colours</h4>
+                <p class="section__text">
+                  UI has to make a huge visual difference between warning, an
+                  alert and a success.
+                </p>
               </div>
             </div>
-            <div class="side">
-              <h5 class="section__subtitle space-between">
-                Interface Design
-                <span class="section__subtitle">8 June, 2020</span>
-              </h5>
-              <h4 class="section__title_4">UX traffic light colours</h4>
-              <p class="section__text">
-                UI has to make a huge visual difference between warning, an
-                alert and a success.
-              </p>
-            </div>
-          </div>
-          <div class="block">
-            <div class="side order_99">
-              <div class="image__container">
-                <img src="./assets/images/image_1.png" alt="picture" />
+            <div class="block">
+              <div class="side order">
+                <div class="image__container">
+                  <img src="./assets/images/image_1.png" alt="picture" />
+                </div>
+              </div>
+              <div class="side">
+                <h5 class="section__subtitle space-between">
+                  Technology <span class="section__subtitle">6 May, 2020</span>
+                </h5>
+                <h4 class="section__title_4">
+                  Using UX Design to Build a Sustainable Future
+                </h4>
+                <p class="section__text">
+                  UI has to make a huge visual difference between warning, an
+                  alert and a success.
+                </p>
               </div>
             </div>
-            <div class="side">
-              <h5 class="section__subtitle space-between">
-                Technology <span class="section__subtitle">6 May, 2020</span>
-              </h5>
-              <h4 class="section__title_4">
-                Using UX Design to Build a Sustainable Future
-              </h4>
-              <p class="section__text">
-                UI has to make a huge visual difference between warning, an
-                alert and a success.
-              </p>
-            </div>
-          </div>
-          <div class="block">
-            <div class="side">
-              <div class="image__container">
-                <img src="./assets/images/image_4.png" alt="picture" />
+            <div class="block">
+              <div class="side">
+                <div class="image__container">
+                  <img src="./assets/images/image_4.png" alt="picture" />
+                </div>
               </div>
-            </div>
-            <div class="side">
-              <h5 class="section__subtitle space-between">
-                Visual Design
-                <span class="section__subtitle">8 June, 2020</span>
-              </h5>
-              <h4 class="section__title_4">Creativity vs. UX</h4>
-              <p class="section__text">
-                Is it possible to create a delightful user experience without
-                following best UX practices?
-              </p>
+              <div class="side">
+                <h5 class="section__subtitle space-between">
+                  Visual Design
+                  <span class="section__subtitle">8 June, 2020</span>
+                </h5>
+                <h4 class="section__title_4">Creativity vs. UX</h4>
+                <p class="section__text">
+                  Is it possible to create a delightful user experience without
+                  following best UX practices?
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -214,56 +211,73 @@
       <section class="section section_desc">
         <div class="container">
           <div class="desc">
-            <h2 class="desc__top">
-              Full-time UI/UX designer Head of Design at VeronaLabs.com
-            </h2>
-            <div class="desc__arrow">&rarr;</div>
-            <p class="desc__bottom">
-              We work with clients around the world from our headquarters in
-              Charleston, South Carolina. We focus on naming, branding, brand
-              narratives, website design and development, and brand experiences.
-            </p>
+            <div class="desc__item">
+              <h2 class="desc__top">
+                Full-time UI/UX designer Head of Design at VeronaLabs.com
+              </h2>
+              <div class="desc__arrow">&rarr;</div>
+            </div>
+            <div class="desc__item">
+              <p class="desc__bottom">
+                We work with clients around the world from our headquarters in
+                Charleston, South Carolina.
+              </p>
+              <p class="desc__bottom">
+                We focus on naming, branding, brand narratives, website design
+                and development, and brand experiences.
+              </p>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <h3 class="footer__title">Need a project?</h3>
-        <h5 class="footer__phone">(239) 555-0108</h5>
-        <h5 class="footer__mail">tanya.hill@example.com</h5>
-        <ul class="social">
-          <li class="social__item"><a href="#!" class="social__link">
-               <svg class="icon">
-                    <use
-                      xlink:href="./assets/icons/sprite.svg#icon-facebook"
-                    ></use>
-                  </svg>
-          </a></li>
-          <li class="social__item"><a href="#!" class="social__link">
-              <svg class="icon">
-                    <use
-                      xlink:href="./assets/icons/sprite.svg#icon-twitter"
-                    ></use>
-                  </svg>
-          </a></li>
-          <li class="social__item"><a href="#!" class="social__link">
-              <svg class="icon">
-                    <use
-                      xlink:href="./assets/icons/sprite.svg#icon-google"
-                    ></use>
-                  </svg>
-          </a></li>
-          <li class="social__item"><a href="#!" class="social__link">
-              <svg class="icon">
-                    <use
-                      xlink:href="./assets/icons/sprite.svg#icon-linkedin"
-                    ></use>
-                  </svg>
-          </a></li>
-        </ul>
-        <p class="rights">© Copyright Manifest Theme.
-Allrights reserved</p>
+        <div class="footer__wrapper">
+          <div class="footer__text">
+            <h3 class="footer__title">Need a project?</h3>
+            <h5 class="footer__phone">(239) 555-0108</h5>
+            <h5 class="footer__mail">tanya.hill@example.com</h5>
+          </div>
+          <ul class="social">
+            <li class="social__item">
+              <a href="#!" class="social__link">
+                <svg class="icon">
+                  <use
+                    xlink:href="./assets/icons/sprite.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#!" class="social__link">
+                <svg class="icon">
+                  <use
+                    xlink:href="./assets/icons/sprite.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#!" class="social__link">
+                <svg class="icon">
+                  <use xlink:href="./assets/icons/sprite.svg#icon-google"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#!" class="social__link">
+                <svg class="icon">
+                  <use
+                    xlink:href="./assets/icons/sprite.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="rights">© Copyright Manifest Theme. Allrights reserved</p>
       </div>
     </footer>
   </body>
